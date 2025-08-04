@@ -1,10 +1,5 @@
 # 🔍 WHMCS Referral Lookup Tool
 
-<div align="center">
-  <img src="https://media.cyberin.in/file/cyberin/images/logo_big.png" alt="Cyberin Logo" width="200" height="auto">
-  <br><br>
-</div>
-
 [![WHMCS Compatible](https://img.shields.io/badge/WHMCS-Compatible-green.svg)](https://www.whmcs.com)
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -147,7 +142,7 @@ _Detailed breakdown of all referral claims with priority levels and affiliate in
 
 ```bash
 cd modules/addons/
-git clone https://github.com/cyberin/whmcs-referral-lookup.git referral_lookup
+git clone https://github.com/himstar/whmcs-referral-lookup-tool.git referral_lookup
 ```
 
 ---
@@ -402,14 +397,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🛡️ **Security Services**: SSL certificates, DDoS protection
 - ☁️ **Cloud Solutions**: Cloud hosting and infrastructure
 - 🛠️ **Custom Development**: WHMCS modules and custom solutions
-- 📊 **Business Solutions**: Complete hosting business management
 
 ### **Connect With Us**
 
 - 🌐 **Website**: [https://cyberin.in](https://cyberin.in)
 - 📧 **Email**: info@cyberin.in
-- 📱 **Support**: [https://cyberin.in/support](https://cyberin.in/support)
-- 💼 **Business**: [https://cyberin.in/business](https://cyberin.in/business)
 
 ---
 
@@ -448,14 +440,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🐛 **Issues**: Report bugs on GitHub Issues
 - 💬 **Discussions**: Join GitHub Discussions for community support
 - 📧 **Email**: Contact us at support@cyberin.in
-
-### **Professional Support**
-
-For enterprise support and custom development:
-
-- 🌐 Visit: [https://cyberin.in/support](https://cyberin.in/support)
-- 📧 Email: enterprise@cyberin.in
-- 📱 Phone: Available on our website
 
 ---
 
