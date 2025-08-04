@@ -355,7 +355,7 @@ We welcome contributions! Please follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/cyberin/whmcs-referral-lookup.git
+git clone https://github.com/himstar/whmcs-referral-lookup-tool.git
 
 # Install dependencies (if any)
 composer install
