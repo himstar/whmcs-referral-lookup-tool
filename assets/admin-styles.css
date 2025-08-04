@@ -1,0 +1,110 @@
+/* WHMCS Admin Area Styles for Referral Lookup Addon */
+
+/* Addon Module Card Styling */
+.addon-module-card[data-module="referral_lookup"] {
+  border-left: 4px solid #4e73df !important;
+  box-shadow: 0 2px 8px rgba(78, 115, 223, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.addon-module-card[data-module="referral_lookup"]:hover {
+  box-shadow: 0 4px 16px rgba(78, 115, 223, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Author Logo Styling */
+.addon-module-card[data-module="referral_lookup"] .author img {
+  border-radius: 4px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.addon-module-card[data-module="referral_lookup"] .author img:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Description Styling */
+.addon-module-card[data-module="referral_lookup"] .description {
+  position: relative !important;
+}
+
+.addon-module-card[data-module="referral_lookup"] .description small {
+  display: block !important;
+  margin-top: 8px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid #e9ecef !important;
+}
+
+.addon-module-card[data-module="referral_lookup"] .description small a {
+  color: #4e73df !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+.addon-module-card[data-module="referral_lookup"] .description small a:hover {
+  color: #2e59d9 !important;
+  text-decoration: underline !important;
+}
+
+/* Module Status Badge */
+.addon-module-card[data-module="referral_lookup"] .status-badge {
+  background: linear-gradient(135deg, #4e73df 0%, #224abe 100%) !important;
+  color: white !important;
+  padding: 4px 12px !important;
+  border-radius: 20px !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Version Badge */
+.addon-module-card[data-module="referral_lookup"] .version-badge {
+  background: #28a745 !important;
+  color: white !important;
+  padding: 2px 8px !important;
+  border-radius: 12px !important;
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .addon-module-card[data-module="referral_lookup"] .author img {
+    height: 16px !important;
+  }
+
+  .addon-module-card[data-module="referral_lookup"] .description small img {
+    height: 14px !important;
+  }
+}
+
+/* Animation for Logo - Performance optimized */
+@keyframes logoGlow {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(78, 115, 223, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(78, 115, 223, 0.6));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(78, 115, 223, 0.3));
+  }
+}
+
+/* Performance: Only animate on hover to reduce CPU usage */
+.addon-module-card[data-module="referral_lookup"] .author img:hover {
+  animation: logoGlow 2s ease-in-out !important;
+}
+
+/* Custom Icon for the Addon */
+.addon-module-card[data-module="referral_lookup"]::before {
+  content: "🔍" !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  font-size: 1.5rem !important;
+  opacity: 0.7 !important;
+  z-index: 1 !important;
+}

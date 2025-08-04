@@ -1,0 +1,273 @@
+/* Referral Lookup Addon - Additional Styles */
+
+.referral-lookup-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.search-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 20px;
+  margin: -20px -20px 20px -20px;
+}
+
+.search-stats-card {
+  background: white;
+  border: 1px solid #e3e6f0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.search-stats-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.client-row {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.client-row:hover {
+  background-color: rgba(0, 123, 255, 0.05) !important;
+  border-left-color: #007bff;
+  transform: translateX(2px);
+}
+
+.referrer-indicator {
+  position: relative;
+  display: inline-block;
+}
+
+.referrer-indicator::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: #28a745;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.modal-content {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: white;
+  margin-bottom: 15px;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stats-label {
+  color: #6c757d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tree-node {
+  padding: 8px 12px;
+  margin: 4px 0;
+  background: #f8f9fa;
+  border-left: 3px solid #007bff;
+  border-radius: 4px;
+}
+
+.tree-level-1 {
+  margin-left: 20px;
+  border-left-color: #28a745;
+}
+.tree-level-2 {
+  margin-left: 40px;
+  border-left-color: #ffc107;
+}
+.tree-level-3 {
+  margin-left: 60px;
+  border-left-color: #dc3545;
+}
+
+.badge-status {
+  font-size: 0.8em;
+  padding: 4px 8px;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.search-highlight {
+  background: #fff3cd;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.no-results-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.no-results-icon {
+  font-size: 4rem;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.quick-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.quick-stat {
+  flex: 1;
+}
+
+.quick-stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.quick-stat-label {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.referral-chain {
+  position: relative;
+  padding-left: 30px;
+}
+
+.referral-chain::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #dee2e6;
+}
+
+.referral-chain-item {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #e3e6f0;
+}
+
+.referral-chain-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #007bff;
+  border-radius: 50%;
+  border: 3px solid white;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .modal-xl {
+    margin: 10px;
+  }
+
+  .search-header {
+    text-align: center;
+  }
+
+  .quick-stats {
+    flex-direction: column;
+  }
+
+  .quick-stat {
+    margin-bottom: 15px;
+  }
+
+  .tree-level-1,
+  .tree-level-2,
+  .tree-level-3 {
+    margin-left: 10px;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

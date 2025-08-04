@@ -1,0 +1,57 @@
+{
+    "name": "cyberin/whmcs-referral-lookup",
+    "description": "A powerful and professional admin tool for WHMCS to search, analyze, and manage customer referral relationships with comprehensive conflict detection and affiliate tracking.",
+    "type": "whmcs-addon",
+    "keywords": [
+        "whmcs",
+        "referral",
+        "affiliate",
+        "lookup",
+        "conflict-detection",
+        "hosting",
+        "cyberin"
+    ],
+    "homepage": "https://cyberin.in",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cyberin",
+            "email": "info@cyberin.in",
+            "homepage": "https://cyberin.in",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@cyberin.in",
+        "issues": "https://github.com/cyberin/whmcs-referral-lookup/issues",
+        "source": "https://github.com/cyberin/whmcs-referral-lookup",
+        "docs": "https://github.com/cyberin/whmcs-referral-lookup#readme"
+    },
+    "require": {
+        "php": ">=7.4",
+        "whmcs/whmcs": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cyberin\\ReferralLookup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cyberin\\ReferralLookup\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+} 
